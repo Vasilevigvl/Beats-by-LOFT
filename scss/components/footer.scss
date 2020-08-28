@@ -1,0 +1,48 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @include  phones  {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  &__item {
+    margin-right: rem(10px);
+
+    &:last-child  {
+      margin-right: 0;
+    }
+  }
+
+  &__icon {
+    width: rem(36px);
+    height: rem(36px);
+    
+    &:hover {
+      fill: black;
+    }
+    
+  }
+
+  &__desc {
+    margin: 0;
+  }
+
+
+  @include  phones  {
+    &__phone-number {
+      align-items: center;
+      justify-content: center;
+      margin-top: rem(20px);
+      margin-bottom: rem(19px);
+    }  }  
+}

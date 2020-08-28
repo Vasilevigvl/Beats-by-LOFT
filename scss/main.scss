@@ -1,0 +1,40 @@
+$containerWidth:  940px;
+$baseFontSize:  18px;
+
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+//colors
+$grey: #f5f5f5;
+$red: #e01f3d;
+
+@import "media.scss";
+
+//normilize
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+//setups
+@import "layout";
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+//components  
+@import "components/hero.scss";
+@import "components/header.scss";
+@import "components/features.scss";
+@import "components/feature.scss";
+@import "components/btn.scss";
+@import "components/section.scss";
+@import "components/headline.scss";
+@import "components/benefits.scss";
+@import "components/benefit.scss";
+@import "components/menu.scss";
+@import "components/phone-number.scss";
+@import "components/reviews.scss";
+@import "components/interactive.scss";
+@import "components/form.scss";
+@import "components/radio.scss";
+@import "components/fixed-menu.scss";
+@import "components/footer.scss";
+@import "components/hamburger.scss";

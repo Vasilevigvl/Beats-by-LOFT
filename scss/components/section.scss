@@ -1,0 +1,44 @@
+.section  {
+  height: 100vh;
+  min-height: rem(650px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__title  {
+    font-size: rem(48px);
+    font-weight: 700;
+    margin-bottom: rem(60px);
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &--figure {
+    position: relative;
+
+    @include  phones  {
+
+    }
+
+    &::before {
+      position: absolute;
+      content: url(../../icons/betwin__maincontent.png);
+      left: 8%;
+      bottom: -2.5%;
+
+      @include  tablets {
+        display: none;
+      }
+
+      @include  phones  {
+        display: none;
+      }
+    }
+  }
+}
+
+.order-section  {
+  color: #ffffff;
+  background: url("..//../icons/bg__order.png") center bottom / cover no-repeat;
+  background-color: #000000;
+}
