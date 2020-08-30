@@ -1,0 +1,80 @@
+.team.team--version--mobile  {
+  display: none;
+
+  @include  phones  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+.team--version--mobile {
+  
+  .team__item{
+  margin-bottom: 25px;
+  margin-right: 0;
+  }
+}
+
+.team--version--desktop {
+  @include  phones  {
+    opacity: 0;
+  }
+}
+
+.team {
+  display: flex;
+
+  &__item {
+    position: relative;
+    margin-right: rem(20px);
+  }
+
+  &__content  {
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    height: 0px;
+    transition: height .3s;
+  }
+
+
+  &__title  {
+    position: relative;
+    border: 0;
+    background: transparent;
+    height: rem(12px);
+    margin-left: rem(20px);
+    margin-top: rem(5px);
+
+    &::after  {
+      position: absolute;
+      
+      content: url(./../../icons/pseudo__qube.png);
+      top: 5%;
+      right: -4%;
+    }
+    
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__spec {
+    font-size: rem(16px);
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: rem(15px);
+  }
+
+  &__text {
+    font-size: rem(16px);
+    font-weight: 400;
+    color: #666666;
+    padding: 0 5%;
+  }
+}

@@ -1,0 +1,30 @@
+.spec {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+  margin-top: rem(20px);
+
+  @include  tablets {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-align: left;
+    
+    .spec__left {
+      margin-right: 80px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__title  {
+    font-weight: 400;
+    font-size: 16px;
+    color: #666666;
+  }
+}

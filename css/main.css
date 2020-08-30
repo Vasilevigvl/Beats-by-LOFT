@@ -243,6 +243,9 @@ img {
   flex-direction: column;
   justify-content: center;
 }
+.section--slider {
+  background-color: #f5f5f5;
+}
 .section__title {
   font-size: 2.6666666667rem;
   font-weight: 700;
@@ -731,6 +734,7 @@ img {
 .footer__icon {
   width: 2rem;
   height: 2rem;
+  fill: #B3B3B3;
 }
 .footer__icon:hover {
   fill: black;
@@ -764,5 +768,232 @@ img {
   background: #000;
   height: 4px;
   border-radius: 10px;
+}
+
+.team.team--version--mobile {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .team.team--version--mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.team--version--mobile .team__item {
+  margin-bottom: 25px;
+  margin-right: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .team--version--desktop {
+    opacity: 0;
+  }
+}
+
+.team {
+  display: flex;
+}
+.team__item {
+  position: relative;
+  margin-right: 1.1111111111rem;
+}
+.team__content {
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  height: 0px;
+  transition: height 0.3s;
+}
+.team__title {
+  position: relative;
+  border: 0;
+  background: transparent;
+  height: 0.6666666667rem;
+  margin-left: 1.1111111111rem;
+  margin-top: 0.2777777778rem;
+}
+.team__title::after {
+  position: absolute;
+  content: url(./../../icons/pseudo__qube.png);
+  top: 5%;
+  right: -4%;
+}
+.team__name {
+  font-size: 18px;
+  font-weight: 700;
+}
+.team__spec {
+  font-size: 0.8888888889rem;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 0.8333333333rem;
+}
+.team__text {
+  font-size: 0.8888888889rem;
+  font-weight: 400;
+  color: #666666;
+  padding: 0 5%;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 768px) {
+  .slider {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.slider__btn {
+  width: 5rem;
+  height: 5rem;
+  background: #6e6e6e;
+  border-radius: 10%;
+  position: relative;
+}
+.slider__btn:hover {
+  background: #ffffff;
+}
+.slider__btn:hover .slider__char:hover {
+  fill: black;
+  border: #ffffff;
+  background: #fff;
+}
+.slider__char {
+  position: absolute;
+  left: 17%;
+  top: 18%;
+  width: 3.3333333333rem;
+  height: 3.3333333333rem;
+  fill: white;
+}
+.slider__right {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .slider__right {
+    text-align: center;
+  }
+}
+.slider__left {
+  flex: 1;
+  margin-right: 2.7777777778rem;
+}
+.slider__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+.slider__price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2.7777777778rem;
+}
+@media screen and (max-width: 768px) {
+  .slider__price {
+    justify-content: center;
+  }
+  .slider__price .slider__cost {
+    margin-right: 1.6666666667rem;
+  }
+}
+.slider__cost {
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.spec {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+  margin-top: 1.1111111111rem;
+}
+@media screen and (max-width: 768px) {
+  .spec {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-align: left;
+  }
+  .spec .spec__left {
+    margin-right: 80px;
+  }
+}
+.spec__text {
+  font-size: 16px;
+  font-weight: 700;
+}
+.spec__title {
+  font-weight: 400;
+  font-size: 16px;
+  color: #666666;
+}
+
+.dropdown {
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .dropdown {
+    display: none;
+  }
+}
+.dropdown:hover .dropdown__menu {
+  display: flex;
+}
+.dropdown__menu {
+  position: absolute;
+  left: 101%;
+  opacity: 0.9;
+  background-color: #ffffff;
+  border-radius: 5%;
+  display: none;
+  width: 15rem;
+  height: 15.5555555556rem;
+}
+.dropdown__list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.dropdown__item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.dropdown__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 2%;
+  padding: 0 5%;
+}
+.dropdown__icon {
+  width: 1.3888888889rem;
+  height: 1.9444444444rem;
+}
+.dropdown__text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+.dropdown__spec {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,64 @@
+.dropdown {
+  position: relative;
+
+  @include  tablets {
+    display: none;
+  }
+
+  &:hover {
+    .dropdown__menu {
+      display: flex;
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    left: 101%;
+    opacity: .9;
+    background-color: #ffffff;
+    border-radius: 5%;
+    display: none;
+    width: rem(270px);
+    height: rem(280px);
+  }
+
+  &__list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+
+  &__block  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2%;
+    padding: 0 5%;
+    
+  }
+
+  &__icon {
+    width: rem(25px);
+    height: rem(35px);
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+  }
+
+  &__spec {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+  }
+}
