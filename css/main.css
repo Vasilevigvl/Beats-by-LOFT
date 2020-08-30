@@ -154,7 +154,7 @@ img {
     content: "";
     width: 17.5555555556rem;
     height: 18.3333333333rem;
-    background: url(../../icons/head-phones--hero.png) center center/contain no-repeat;
+    background: url(../icons/head-phones--hero.png) center center/contain no-repeat;
     margin-bottom: 0.6666666667rem;
   }
 }
