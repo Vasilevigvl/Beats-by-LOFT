@@ -160,7 +160,7 @@ img {
 }
 .hero::before {
   position: absolute;
-  content: url(../../icons/figure__hero.png);
+  content: url(../icons/figure__hero.png);
   right: 10%;
   bottom: -2.5%;
 }
